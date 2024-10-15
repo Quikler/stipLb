@@ -63,7 +63,7 @@ export const Lb7 = () => {
                         <Link
                             fontWeight="bold"
                             fontSize="24"
-                            href="https://github.com/Quikler/stipLb/src/componentsLb7.jsx"
+                            href="https://github.com/Quikler/stipLb/tree/master/src/components/Lb7.jsx"
                         >
                             Коди програми
                         </Link>

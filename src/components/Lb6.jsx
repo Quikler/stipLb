@@ -58,7 +58,7 @@ export const Lb6 = () => {
                         5. Змінює колір на зелений<br />
                         6. Складається та відображається
                     </Text>
-                    <Link px="6" fontWeight='bold' fontSize='24' href='https://github.com/Quikler/stipLb/src/componentsLb4.jsx'>Коди програми</Link>
+                    <Link px="6" fontWeight='bold' fontSize='24' href='https://github.com/Quikler/stipLb/tree/master/src/components/Lb4.jsx'>Коди програми</Link>
             </VStack>
             </Box>
 

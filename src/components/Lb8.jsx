@@ -104,7 +104,7 @@ export const Lb8 = () => {
                         <Link
                             fontWeight="bold"
                             fontSize="24"
-                            href="https://github.com/Quikler/stipLb/src/componentsLb8.jsx"
+                            href="https://github.com/Quikler/stipLb/tree/master/src/components/Lb8.jsx"
                         >
                             Коди програми
                         </Link>
