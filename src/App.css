@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.alive {
+    background-color: greenyellow;
+}
+
+.dead {
+    background-color: red;
+}
