@@ -23,6 +23,7 @@ export const Lb6 = () => {
         });
 
         circle.delay(delay).queue(function (next) {
+            $(this).css('opacity', '1');
             $(this).css('border-radius', '30px');
             next();
         });

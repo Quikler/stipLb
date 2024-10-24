@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {Box, Link, Text, VStack} from "@chakra-ui/react";
+import {Box, HStack, Link, Text, VStack} from "@chakra-ui/react";
 
 export const Lb7 = () => {
     const [recipes, setRecipes] = useState([]);
@@ -59,7 +59,7 @@ export const Lb7 = () => {
                         - рецепт;<br />
                         – кількість калорій.
                     </Text>
-                    <VStack className="mt-6">
+                    <HStack justifyContent='center' gap={12} className="mt-6">
                         <Link
                             fontWeight="bold"
                             fontSize="24"
@@ -67,7 +67,14 @@ export const Lb7 = () => {
                         >
                             Коди програми
                         </Link>
-                    </VStack>
+                        <Link
+                            fontWeight="bold"
+                            fontSize="24"
+                            href="https://github.com/Quikler/stipLb/blob/master/public/cookbook.xml"
+                        >
+                            Xml файл
+                        </Link>
+                    </HStack>
                 </VStack>
             </Box>
             <div className="p-6 bg-white rounded-md shadow-md m-5">
