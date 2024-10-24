@@ -5,7 +5,7 @@ import {Link, VStack, Text, Box, Button} from "@chakra-ui/react";
 export const Lb6 = () => {
     const onClick = () => {
         const circle = $('#animated-circle');
-        const delay = 700;
+        const delay = 1000;
 
         circle.delay(delay).queue(function (next) {
             $(this).css({
@@ -23,18 +23,15 @@ export const Lb6 = () => {
         });
 
         circle.delay(delay).queue(function (next) {
-            $(this).css('opacity', '1');
+            //$(this).css('opacity', '1');
             $(this).css('border-radius', '30px');
             next();
         });
 
-        circle.delay(delay).queue(function (next) {
-            $(this).css({
-                'top': '0',
-                'left': '0',
-            });
-            next();
-        });
+        circle.delay(delay).animate({
+            'top': '0',
+            'left': '0',
+        }, delay);
 
         circle.delay(delay).queue(function (next) {
             $(this).css('background', 'green');
