@@ -6,6 +6,7 @@ import {Lb5} from "./src/components/Lb5.jsx";
 import {Lb7} from "./src/components/Lb7.jsx";
 import {Lb8} from "./src/components/Lb8.jsx";
 import {Lb9} from "./src/components/Lb9.jsx";
+import {Lb10} from "./src/components/Lb10.jsx";
 
 const AppRoutes = [
     {
@@ -47,6 +48,10 @@ const AppRoutes = [
     {
         path: '/stipLb/Lb9',
         element: <Lb9 />
+    },
+    {
+        path: '/stipLb/Lb10',
+        element: <Lb10 />
     },
 ];
 
