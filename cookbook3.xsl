@@ -21,20 +21,22 @@
     </xsl:template>
 
     <xsl:template match="Рецепт">
-        <tr>
-            <td><xsl:value-of select="ТипСтрави"/></td>
-            <td><xsl:value-of select="НазваСтрави"/></td>
-            <td><xsl:value-of select="МіраТерезів"/></td>
-            <td>
-                <xsl:for-each select="Інгредієнт">
-                    <div>
-                        <xsl:value-of select="Назва"/>: <xsl:value-of select="Кількість"/>
-                    </div>
-                </xsl:for-each>
-            </td>
-            <td><xsl:value-of select="Рецепт"/></td>
-            <td><xsl:value-of select="Калорії"/></td>
-        </tr>
+        <xsl:if test="Калорії > 340">
+            <tr>
+                <td><xsl:value-of select="ТипСтрави"/></td>
+                <td><xsl:value-of select="НазваСтрави"/></td>
+                <td><xsl:value-of select="МіраТерезів"/></td>
+                <td>
+                    <xsl:for-each select="Інгредієнт">
+                        <div>
+                            <xsl:value-of select="Назва"/>: <xsl:value-of select="Кількість"/>
+                        </div>
+                    </xsl:for-each>
+                </td>
+                <td><xsl:value-of select="Рецепт"/></td>
+                <td><xsl:value-of select="Калорії"/></td>
+            </tr>
+        </xsl:if>
     </xsl:template>
 
 </xsl:stylesheet>
