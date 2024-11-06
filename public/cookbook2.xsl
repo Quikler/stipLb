@@ -14,7 +14,9 @@
                         <th>Рецепт</th>
                         <th>Калорії</th>
                     </tr>
-                    <xsl:apply-templates select="КулінарнаКнига/Рецепт"></xsl:apply-templates>
+                    <xsl:apply-templates select="КулінарнаКнига/Рецепт">
+                        <xsl:sort select="НазваСтрави" order="ascending"/>
+                    </xsl:apply-templates>
                 </table>
             </body>
         </html>
