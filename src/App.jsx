@@ -47,6 +47,9 @@ function App() {
                             <RouterLink to="/stipLb/Lb21" className="hover:text-green-400">
                                 Лабораторна робота 2.1
                             </RouterLink>
+                            <RouterLink to="/stipLb/Lb22" className="hover:text-green-400">
+                                Лабораторна робота 2.2
+                            </RouterLink>
                         </VStack>
                     </Box>
 
