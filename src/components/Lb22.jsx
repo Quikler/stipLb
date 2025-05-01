@@ -18,14 +18,19 @@ export const Lb22 = () => {
                 <Img src="./images/lb2.2.11.png" />
 
                 <Text>
+                    Ресурс сторінки повертає статусний код: 404 NOT FOUND
+                </Text>
+
+                <Text>
+                    Заголовки для кешування: 304 Cache-Control
+                </Text>
+
+                <Text>
                     Відповідь сервера (статусний код, заголовки).
                 </Text>
                 <Img src="./images/lb2.2.13.png" />
 
-                <Text>
-                    Ресурс сторінки повертає статусний код: 200 OK
-                    Заголовки для кешування: Cache-Control
-                </Text>
+                <Img src="./images/lb2.2.14.png" />
             </VStack>
 
             <VStack spacing={4} align="stretch" className="p-6">
